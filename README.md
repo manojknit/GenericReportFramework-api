@@ -54,7 +54,9 @@ Docker file is included for docker deployment.
                 "filter_by_attribute": "name"
             }
             ```
-        ![UserReport](https://github.com/manojknit/GenericReportFramework-api/raw/master/images/UserReport.png)
+            - Postman Screenshot
+            ![UserReport](https://github.com/manojknit/GenericReportFramework-api/raw/master/images/UserReport.png)
+        
         * Report Name: IncidentReport
             - Post URL : http://0.0.0.0:4000/report/add
             ```
@@ -65,7 +67,8 @@ Docker file is included for docker deployment.
                 "filter_by_attribute": ""
             }
             ```
-        ![IncidentReport](https://github.com/manojknit/GenericReportFramework-api/raw/master/images/IncidentReport.png)
+            - Postman Screenshot
+            ![IncidentReport](https://github.com/manojknit/GenericReportFramework-api/raw/master/images/IncidentReport.png)
 
    * Generate report as per config. Report name is mandatory. Count and filter parameters are optional<br>
         http://localhost:4000/report/generate/UserReport/15/Ervin <br>
