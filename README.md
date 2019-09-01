@@ -75,7 +75,8 @@ Docker file is included for docker deployment.
         http://localhost:4000/report/generate/IncidentReport<br>
    * System also dumps report in project folder<br>
    <br>
-   For more please check video to get instructions.
+   For more, please checkout walkthrough video.<br>
+   https://youtu.be/1NH2YZG6CuE
 
 ## Thank You
 Manoj Kumar
