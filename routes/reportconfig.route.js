@@ -57,7 +57,7 @@ reportconfigRoutes.route('/config').get(function (req, res) {
 //same way one parameter can be added for group by
 reportconfigRoutes.route('/generate/:name/:count?/:filter?').get(function (req, res) {
   let name = req.params.name;
-  let count = 10; // default count
+  let count = 100; // default count
   let filter = null;
   if(req.params.count > 0)
   {
