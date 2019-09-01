@@ -34,7 +34,7 @@ Following table is intended to store report configuration
 * ReportConfig: model maps to mongodb table to store report configuration
 
 ## How to Run
-Run `node server.js` for a api server. Navigate to `http://localhost:4000/`. The app will automatically reload if you change any of the source files by running `nodemon server` insted.
+Run `node server.js` for a api server. Navigate to `http://localhost:4000/`. The app will automatically reload if you change any of the source files by running `nodemon server` instead.<br>
 Docker file is included for docker deployment.
 <br>
 <br>
