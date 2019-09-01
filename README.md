@@ -36,6 +36,8 @@ Following table is intended to store report configuration
 ## How to Run
 Run `node server.js` for a api server. Navigate to `http://localhost:4000/`. The app will automatically reload if you change any of the source files by running `nodemon server` insted.
 Docker file is included for docker deployment.
+<br>
+Note: Don't forget to replace user id and password for mongodb database.
 
 ## Available methods: <br>
    * List of reports : http://localhost:4000/report <br>
