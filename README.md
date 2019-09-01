@@ -24,10 +24,10 @@ Examples of other reports that could be added into such generic report framework
 ## Database: generic-report-framework
 Following table is intended to store report configuration
 * Table: ReportConfig
-    report_name : String
-    datasource_api : String
-    attributes_to_display : String
-    filter_by_attribute : String
+    * report_name : String
+    * datasource_api : String
+    * attributes_to_display : String
+    * filter_by_attribute : String
 
 ## API
 reportconfig.route: has the Api logic
