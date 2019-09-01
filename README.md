@@ -42,9 +42,28 @@ Note: Don't forget to replace user id and password for mongodb database.
 ## Available methods: <br>
    * List of reports : http://localhost:4000/report <br>
    * Reports config: http://localhost:4000/report/config <br>
-   * Add Config(post request): http://0.0.0.0:4000/report/add <br>
-        Sample Body Format {"report_name": "UserReport","datasource_api": "https://jsonplaceholder.typicode.com/users","attributes_to_display": "id,name,phone,address.street,address.suite,address.city,address.zipcode", "filter_by_attribute": "name"}<br>
+   * Add Config(post request): <br>
+        * Report Name: UserReport
+            - Post URL : http://0.0.0.0:4000/report/add
+            ```
+            {
+                "report_name": "UserReport",
+                "datasource_api": "https://jsonplaceholder.typicode.com/users",
+                "attributes_to_display": "id,name,phone,address.street,address.suite,address.city,address.zipcode",
+                "filter_by_attribute": "name"
+            }
+            ```
         ![UserReport](https://github.com/manojknit/GenericReportFramework-api/raw/master/images/UserReport.png)
+        * Report Name: UserReport
+            - Post URL : http://0.0.0.0:4000/report/add
+            ```
+            {
+                "report_name": "IncidentReport",
+                "datasource_api": "https://kyyfz4489y7m.statuspage.io/api/v2/incidents.json",
+                "attributes_to_display": "id,name,created_at,resolved_at",
+                "filter_by_attribute": ""
+            }
+            ```
         ![IncidentReport](https://github.com/manojknit/GenericReportFramework-api/raw/master/images/IncidentReport.png)
 
    * Generate report as per config. Report name is mandatory. Count and filter parameters are optional<br>
