@@ -30,8 +30,8 @@ Following table is intended to store report configuration
     * filter_by_attribute : String
 
 ## API
-reportconfig.route: has the Api logic
-ReportConfig: model maps to mongodb table to store report configuration
+* reportconfig.route: has the Api logic
+* ReportConfig: model maps to mongodb table to store report configuration
 
 ## How to Run
 Run `node server.js` for a api server. Navigate to `http://localhost:4000/`. The app will automatically reload if you change any of the source files by running `nodemon server` insted.
@@ -50,8 +50,7 @@ Docker file is included for docker deployment.
         http://localhost:4000/report/generate/IncidentReport<br>
    * System also dumps report in project folder<br>
    <br>
-   For more please check video to get instructions.;
+   For more please check video to get instructions.
 
-
-
-## 
+## Thank You
+Manoj Kumar
