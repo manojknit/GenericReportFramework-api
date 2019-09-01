@@ -23,11 +23,11 @@ Examples of other reports that could be added into such generic report framework
 
 ## Database: generic-report-framework
 Following table is intended to store report configuration
-** Table: ReportConfig **
-report_name : String
-datasource_api : String
-attributes_to_display : String
-filter_by_attribute : String
+* Table: ReportConfig
+    report_name : String
+    datasource_api : String
+    attributes_to_display : String
+    filter_by_attribute : String
 
 ## API
 reportconfig.route: has the Api logic
@@ -37,20 +37,20 @@ ReportConfig: model maps to mongodb table to store report configuration
 Run `node server.js` for a api server. Navigate to `http://localhost:4000/`. The app will automatically reload if you change any of the source files by running `nodemon server` insted.
 Docker file is included for docker deployment.
 
-## Available methods: <br>\
-   * List of reports : http://localhost:4000/report <br>\
-   * Reports config: http://localhost:4000/report/config <br>\
-   * Add Config(post request): http://0.0.0.0:4000/report/add <br>\
-        Sample Body Format {"report_name": "UserReport","datasource_api": "https://jsonplaceholder.typicode.com/users","attributes_to_display": "id,name,phone,address.street,address.suite,address.city,address.zipcode", "filter_by_attribute": "name"}<br>\
+## Available methods: <br>
+   * List of reports : http://localhost:4000/report <br>
+   * Reports config: http://localhost:4000/report/config <br>
+   * Add Config(post request): http://0.0.0.0:4000/report/add <br>
+        Sample Body Format {"report_name": "UserReport","datasource_api": "https://jsonplaceholder.typicode.com/users","attributes_to_display": "id,name,phone,address.street,address.suite,address.city,address.zipcode", "filter_by_attribute": "name"}<br>
         ![UserReport](https://github.com/manojknit/GenericReportFramework-api/raw/master/images/UserReport.png)
         ![IncidentReport](https://github.com/manojknit/GenericReportFramework-api/raw/master/images/IncidentReport.png)
 
-   * Generate report as per config. Report name is mandatory. Count and filter parameters are optional<br>\
-        http://localhost:4000/report/generate/UserReport/15/Ervin <br>\
-        http://localhost:4000/report/generate/IncidentReport<br>\
-   System also dumps report in project folder<br>\
-   <br>\
-   For more please check video to get instructions.');
+   * Generate report as per config. Report name is mandatory. Count and filter parameters are optional<br>
+        http://localhost:4000/report/generate/UserReport/15/Ervin <br>
+        http://localhost:4000/report/generate/IncidentReport<br>
+   * System also dumps report in project folder<br>
+   <br>
+   For more please check video to get instructions.;
 
 
 
